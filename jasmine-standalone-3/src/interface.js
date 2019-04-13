@@ -48,8 +48,8 @@ $(document).ready(function() {
       $('#harrisonscore').text('')
       console.log(response)
       var score = response.Ratings
-      console.log(score)
-      if (score[0].Source === "Internet Movie Database" && score[1].Source === "Rotten Tomatoes" && score.length === 2)
+
+      if (score.length === 2 && score[0].Source === "Internet Movie Database" && score[1].Source === "Rotten Tomatoes")
       {var IMDBscore = Number(score[0].Value[0] + score[0].Value[2])
         console.log(score[1].Value.length)
         if (score[1].Value.length === 4)
@@ -57,14 +57,14 @@ $(document).ready(function() {
         else
         {var RTscore = Number(score[1].Value[0] + score[1].Value[1])};
         $('#harrisonscore').text(Math.round(((IMDBscore + RTscore) / 200) * 100)+"%")}
-      else if (score[0].Source === "Internet Movie Database" && score[1].Source === "Metacritic" && score.length === 2)
+      else if (score.length === 2 && score[0].Source === "Internet Movie Database" && score[1].Source === "Metacritic")
       {var IMDBscore = Number(score[0].Value[0] + score[0].Value[2]);
         if (score[2].Value.length === 4)
         {var MCscore = Number(score[1].Value[0] + score[1].Value[1] + score[2].Value[2])}
         else
         {var MCscore = Number(score[1].Value[0] + score[1].Value[1])};
         $('#harrisonscore').text(Math.round(((IMDBscore + MCscore) / 200) * 100)+"%")}
-      else if (score[0].Source === "Rotten Tomatoes" && score[1].Source === "Metacritic" && score.length === 2)
+      else if (score.length === 2 && score[0].Source === "Rotten Tomatoes" && score[1].Source === "Metacritic")
         {var RTscore = Number(score[0].Value[0] + score[0].Value[1]);
           var MCscore = Number(score[1].Value[0] + score[1].Value[1]);
           $('#harrisonscore').text(Math.round(((RTscore + MCscore)/200) * 100)+"%")}
