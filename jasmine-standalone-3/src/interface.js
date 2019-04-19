@@ -14,14 +14,18 @@ $(document).ready(function() {
            $('#moviescoreRT').text("")
            $('#moviescoreMC').text("")
            $('img').attr('src');
+           console.log(response.imdbID)
            var title = response.Title
            var score = response.Ratings
            var plot = response.Plot
            var imdbvotes = response.imdbVotes
            var poster = response.Poster
+           var imdbID = response.imdbID
            $('#movietitle').text(title)
            $('#movieplot').text(plot)
            $('img').attr('src', poster);
+
+           console.log('https://www.imdb.com/title/' + imdbID + '/?ref_=fn_al_tt_1')
 
            if (score.length === 1)
             {$('#moviescoreIMDB').text(score[0].Source + " Score: " + score[0].Value + " Votes:" + imdbvotes)}
@@ -34,7 +38,11 @@ $(document).ready(function() {
              $('#moviescoreMC').text(score[2].Source + " Score: " + score[2].Value)}
            else
              {$('#moviescoreIMDB').text('No Score')};
-         });
+
+             $("#image").wrap($('<a>',{
+               href: 'https://www.imdb.com/title/' + imdbID + '/?ref_=fn_al_tt_1'
+             }));
+           });
        });
 
 
