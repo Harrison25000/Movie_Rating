@@ -8,11 +8,12 @@
     <script src="src/interface.js"></script>
     <script src="src/Movie.js"></script>
   </head>
-  <body>
+  <body style='background-color: black; color: white'>
+    <center>
     Enter A Film:
     <form id="searchfilm" method='' action="post">
       <input type='text' id='search'>
-      <input type='submit' id='submit'>
+      <input type='submit' id='submit' value='SUBMIT'>
     </form>
     <br><br>
     <div id='image'><img src='' style='size:35%'>
@@ -22,7 +23,7 @@
     <div id='moviescoreIMDB'></div><br>
     <div id='moviescoreRT'></div><br>
     <div id='moviescoreMC'></div><br><br>
-    <h3>Harrison Score:</h3><p id='harrisonscore'></p>
-
+    <div id='harrisondiv' style='font-size: 20px; font-weight: bold'></div><p id='harrisonscore'></p>
+  </center>
   </body>
 </html>

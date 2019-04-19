@@ -13,6 +13,7 @@ $(document).ready(function() {
            $('#moviescoreIMDB').text("")
            $('#moviescoreRT').text("")
            $('#moviescoreMC').text("")
+           $('img').attr('src');
            var title = response.Title
            var score = response.Ratings
            var plot = response.Plot
@@ -46,6 +47,7 @@ $(document).ready(function() {
 
     $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(film) + '&apikey=78eae46').then(function(response){
       $('#harrisonscore').text('')
+      $('#harrisondiv').text('Harrison Score:')
       console.log(response)
       var score = response.Ratings
 
@@ -59,8 +61,8 @@ $(document).ready(function() {
         $('#harrisonscore').text(Math.round(((IMDBscore + RTscore) / 200) * 100)+"%")}
       else if (score.length === 2 && score[0].Source === "Internet Movie Database" && score[1].Source === "Metacritic")
       {var IMDBscore = Number(score[0].Value[0] + score[0].Value[2]);
-        if (score[2].Value.length === 4)
-        {var MCscore = Number(score[1].Value[0] + score[1].Value[1] + score[2].Value[2])}
+        if (score[1].Value.length === 7)
+        {var MCscore = Number(score[1].Value[0] + score[1].Value[1] + score[1].Value[2])}
         else
         {var MCscore = Number(score[1].Value[0] + score[1].Value[1])};
         $('#harrisonscore').text(Math.round(((IMDBscore + MCscore) / 200) * 100)+"%")}

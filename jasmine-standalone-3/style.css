@@ -19,3 +19,18 @@
 #moviescoreMC {
 
 }
+
+#harrisonscore {
+  font-size: 20px;
+}
+
+#search {
+  width: 20%;
+}
+
+#submit {
+  width: 5%;
+  background-color: green;
+  color: white;
+
+}
