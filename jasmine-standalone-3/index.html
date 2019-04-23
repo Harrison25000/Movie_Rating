@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>MovieRatings</title>
     <script src="src/interface.js"></script>
-    <script src="src/Movie.js"></script>
   </head>
   <body style='background-color: black; color: white'>
     <center>
@@ -15,15 +14,24 @@
       <input type='text' id='search'>
       <input type='submit' id='submit' value='SUBMIT'>
     </form>
-    <br><br>
-    <div id='image'><img src='' style='size:35%'>
-    </div><br>
-    <div id='movietitle'></div><br>
-    <div id='movieplot'></div><br>
-    <div id='moviescoreIMDB'></div><br>
-    <div id='moviescoreRT'></div><br>
-    <div id='moviescoreMC'></div><br><br>
-    <div id='harrisondiv' style='font-size: 20px; font-weight: bold'></div><p id='harrisonscore'></p>
+      <section class="container2">
+        <p id='clickimage' style='font-size: 15px'></p>
+        <div id='image'><img src='' style='size:35%'>
+        </div>
+        <br><br>
+        <div id='movietitle'></div><br><br>
+        <div id='movieplot'></div>
+      </section>
+      <br><br><br><br>
+      <section class="container3">
+        <div id='moviescoreIMDB'></div><br>
+        <div id='moviescoreRT'></div><br>
+        <div id='moviescoreMC'></div><br>
+      </section>
+      <br><br>
+      <section class="container1">
+        <div id='harrisondiv' style="font-weight: bold"></div><p id='harrisonscore'></p>
+      </section>
   </center>
   </body>
 </html>

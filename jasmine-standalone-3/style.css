@@ -1,27 +1,66 @@
+.container2 {
+    width: 80%;
+    height: 200px;
+    background-color: black;
+    padding: 10px;
+}
+
+#image {
+  float: left;
+  margin: 30px;
+}
+
 #movietitle {
-  width: 35%;
+  margin-left: 20px;
+  float:left;
   font-weight: bold;
- font-size:25px;
+  font-size:25px;
 }
 
 #movieplot {
+  width: 80%;
+  font-size: 20px;
+}
 
+.container3 {
+  width: 80%;
+  height: 100px;
+  background-color: black;
+  margin: auto;
+  padding: 10px;
+  font-size: 16.5px;
 }
 
 #moviescoreIMDB {
-
+  width: 35%;
+  margin-left: 175px;
 }
 
 #moviescoreRT {
-
+  width: 35%;
+  margin-left: 175px;
 }
 
 #moviescoreMC {
-
+  width: 35%;
+  margin-left: 175px;
 }
 
+.container1 {
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+}
+#harrisondiv {
+    margin-left: 20px;
+    float: left;
+    font-size: 25px;
+}
 #harrisonscore {
-  font-size: 20px;
+  margin-right: 200px;
+    font-size: 23px;
 }
 
 #search {
@@ -30,7 +69,7 @@
 
 #submit {
   width: 5%;
+  font-size: 75%;
   background-color: green;
   color: white;
-
 }
