@@ -1,12 +1,5 @@
 # Movie_Rating
-<<<<<<< HEAD
-Movie_Rating_Website
 
-Implementing API's from Movie Websites.
-
-
-- OMDP API KEY - http://www.omdbapi.com/?i=tt3896198&apikey=78eae46
-=======
 
 
 A Movie Rating Website using the Open Movie Database (OMDb) Api provided at: https://www.omdbapi.com .
@@ -22,4 +15,5 @@ The API provided a range of results; poster image, film/tv show descriptions, ra
  - Jasmine also used for partial testing.
  - NodeJS is used to run a server - also required when deploying with Heroku.
  - Written in JavaScript.
->>>>>>> 88a4563df937436bf6fb5a48a8bbf32029c6acdc
+=======
+

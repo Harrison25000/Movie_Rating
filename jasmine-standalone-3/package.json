@@ -1,29 +1,15 @@
 {
   "name": "jasmine-standalone-3",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "engines":{
-    "node": "11.14.0",
-    "npm": "6.9.0"
-  },
+
 =======
->>>>>>> 88a4563df937436bf6fb5a48a8bbf32029c6acdc
+
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-<<<<<<< HEAD
-    "start": "node index.js",
-    "test": "jest --coverage --forceExit"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.16.4",
-    "save": "^2.3.3"
-  }
+
 =======
    "start": "node index.js",
    "test": "jest --coverage --forceExit"
@@ -31,5 +17,4 @@
   "author": "",
   "license": "ISC",
   "description": ""
->>>>>>> 88a4563df937436bf6fb5a48a8bbf32029c6acdc
 }
