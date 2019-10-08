@@ -7,7 +7,7 @@ $(document).ready(function() {
       //Do the checks here.
       console.log(event)
       var film = event.target[0].value
-<<<<<<< HEAD
+
       var year = event.target[1].value
       console.log(year)
 
@@ -87,8 +87,7 @@ $(document).ready(function() {
           $("#clickimage").text("(click image to go to IMDB)")
         };
       });
-    });
-=======
+
 
          $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(film) + '&apikey=78eae46').then(function(response){
            $('#moviescoreIMDB').text("")
@@ -124,8 +123,8 @@ $(document).ready(function() {
              }));
              $("#clickimage").text("(click image to go to IMDB)")
          });
-       });
->>>>>>> 88a4563df937436bf6fb5a48a8bbf32029c6acdc
+
+
 
 
   document.getElementById("searchfilm").addEventListener("submit", function(event){
@@ -229,6 +228,5 @@ $(document).ready(function() {
     };
     });
   });
-
-
+});
 });
