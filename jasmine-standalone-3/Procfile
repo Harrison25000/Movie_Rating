@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 web: node index.js
+=======
+web: open index.html
+>>>>>>> 88a4563df937436bf6fb5a48a8bbf32029c6acdc
