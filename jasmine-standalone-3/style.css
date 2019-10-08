@@ -1,21 +1,180 @@
+.container2 {
+    width: 80%;
+    height: 200px;
+    background-color: black;
+    padding: 10px;
+}
+
+#image {
+  float: left;
+  margin: 30px;
+}
+
 #movietitle {
-  width: 35%;
+  margin-left: 20px;
+  float:left;
   font-weight: bold;
- font-size:25px;
+  font-size:25px;
 }
 
 #movieplot {
+  width: 80%;
+  font-size: 20px;
+}
 
+.container3 {
+  width: 80%;
+  height: 100px;
+  background-color: black;
+  margin: auto;
+  padding: 10px;
+  font-size: 16.5px;
 }
 
 #moviescoreIMDB {
-
+  width: 35%;
+  margin-left: 175px;
 }
 
 #moviescoreRT {
-
+  width: 35%;
+  margin-left: 175px;
 }
 
 #moviescoreMC {
-
+  width: 35%;
+  margin-left: 175px;
 }
+
+.container1 {
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+}
+#harrisondiv {
+    margin-left: 20px;
+    float: left;
+    font-size: 25px;
+}
+#harrisonscore {
+  margin-right: 200px;
+    font-size: 23px;
+}
+
+/* #harrisondiv, #harrisonscore {
+  display: inline;
+} */
+
+#search {
+  width: 20%;
+}
+
+#submit {
+  width: 5%;
+  font-size: 75%;
+  background-color: green;
+  color: white;
+}
+
+@media only screen and (max-device-width: 600px) {
+
+   #search {
+     width: 60%
+   }
+
+   #submit {
+     width: 25%;
+     font-size: 75%;
+     background-color: green;
+     color: white;
+   }
+
+   .container2 {
+     height: 665px;
+       border: solid black;
+   }
+
+   #image {
+     float: none!important;
+     margin: 0px!important;
+   }
+
+   #movietitle {
+     position: center!important;
+     top: 100px!important;
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   #movieplot {
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   .container3 {
+     height: 125px;
+     border: solid black;
+   }
+
+   #moviescoreIMDB {
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   #moviescoreRT {
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   #moviescoreMC {
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   .container1 {
+     height: 80px;
+     border: solid black;
+   }
+
+   #harrisondiv {
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+   #harrisonscore {
+
+     clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+   }
+
+  }

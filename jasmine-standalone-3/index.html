@@ -3,26 +3,36 @@
   <head>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>MovieRatings</title>
     <script src="src/interface.js"></script>
-    <script src="src/Movie.js"></script>
   </head>
-  <body>
-    Enter A Film:
+  <body style='background-color: black; color: white'>
+    <center>
     <form id="searchfilm" method='' action="post">
-      <input type='text' id='search'>
-      <input type='submit' id='submit'>
+      Enter A Film or TV Show: &nbsp; <input type='text' id='search'><br>
+      Year: &nbsp; <input type='text' id='year'>
+      <input type='submit' id='submit' value='SUBMIT'>
     </form>
-    <br><br>
-    <div id='image'><img src='' style='size:35%'>
-    </div><br>
-    <div id='movietitle'></div><br>
-    <div id='movieplot'></div><br>
-    <div id='moviescoreIMDB'></div><br>
-    <div id='moviescoreRT'></div><br>
-    <div id='moviescoreMC'></div><br><br>
-    <h3>Harrison Score:</h3><p id='harrisonscore'></p>
-
+      <section class="container2">
+        <p id='clickimage' style='font-size: 15px'></p>
+        <div id='image'><img src='' style='size:35%'>
+        </div>
+        <br><br>
+        <div id='movietitle'></div><br><br>
+        <div id='movieplot'></div>
+      </section>
+      <br><br><br><br>
+      <section class="container3">
+        <div id='moviescoreIMDB'></div><br>
+        <div id='moviescoreRT'></div><br>
+        <div id='moviescoreMC'></div><br>
+      </section>
+      <br><br>
+      <section class="container1">
+        <div id='harrisondiv' style="font-weight: bold"></div><p id='harrisonscore'></p>
+      </section>
+  </center>
   </body>
 </html>

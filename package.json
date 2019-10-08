@@ -1,0 +1,19 @@
+{
+  "name": "movie_rating",
+  "version": "1.0.0",
+  "description": "Movie_Rating_Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harrison25000/Movie_Rating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harrison25000/Movie_Rating/issues"
+  },
+  "homepage": "https://github.com/Harrison25000/Movie_Rating#readme"
+}
