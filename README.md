@@ -1,6 +1,7 @@
 # Movie_Rating
 
 
+
 A Movie Rating Website using the Open Movie Database (OMDb) Api provided at: https://www.omdbapi.com .
 Deployed on Heroku - accessed at: https://harrison-movie-ratings.herokuapp.com .
 
@@ -14,3 +15,5 @@ The API provided a range of results; poster image, film/tv show descriptions, ra
  - Jasmine also used for partial testing.
  - NodeJS is used to run a server - also required when deploying with Heroku.
  - Written in JavaScript.
+=======
+
