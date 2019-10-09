@@ -123,18 +123,6 @@ $(document).ready(function() {
              $("#clickimage").text("(click image to go to IMDB)")
          });
 
-
-
-
-  // document.getElementById("searchfilm").addEventListener("submit", function(event){
-  //
-  //   event.preventDefault();
-  //
-  //   //Do the checks here.
-  //   console.log(event)
-  //   var film = event.target[0].value
-  //   var year = event.target[1].value
-
     $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(film) + '&y=' +(year) + '&apikey=78eae46').then(function(response){
       if (response.Response == 'False') {
         console.log('without year')
