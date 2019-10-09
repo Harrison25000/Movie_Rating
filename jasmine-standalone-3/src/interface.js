@@ -7,7 +7,6 @@ $(document).ready(function() {
       //Do the checks here.
       console.log(event)
       var film = event.target[0].value
-
       var year = event.target[1].value
       console.log(year)
 
@@ -127,13 +126,14 @@ $(document).ready(function() {
 
 
 
-  document.getElementById("searchfilm").addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-    //Do the checks here.
-    var film = event.target[0].value
-    var year = event.target[1].value
+  // document.getElementById("searchfilm").addEventListener("submit", function(event){
+  //
+  //   event.preventDefault();
+  //
+  //   //Do the checks here.
+  //   console.log(event)
+  //   var film = event.target[0].value
+  //   var year = event.target[1].value
 
     $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(film) + '&y=' +(year) + '&apikey=78eae46').then(function(response){
       if (response.Response == 'False') {
@@ -227,6 +227,6 @@ $(document).ready(function() {
 
     };
     });
-  });
+  // });
 });
 });
